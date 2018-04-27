@@ -1,0 +1,53 @@
+﻿@model comp2007w2018finalA.Models.City
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>City</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CityName)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <h4>Restaurants</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CityName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CityName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CityAddress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CityAddress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CityRestaurants)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CityRestaurants)
+        </dd>
+
+
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
